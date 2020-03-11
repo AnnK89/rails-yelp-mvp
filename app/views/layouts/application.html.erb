@@ -12,6 +12,10 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-light bg-light border">
+      <%= link_to 'Restaurants', restaurants_path, class: "text-secondary" %>
+      <%= link_to 'New Restaurant', new_restaurant_path, class: "text-secondary" %>
+    </nav>
     <%= yield %>
   </body>
 </html>
